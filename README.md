@@ -10,7 +10,7 @@
 There are no hard settings/setup, you just have to make sure you have installed python3.xx latest version on your machine. After installing and setup python, copy paste the commands shown below.
 </li></ul>
 
->> git clone https://github.com/Wh1teKing/mando</br>
+>> git clone https://github.com/josifkhan/mando</br>
 >> cd mando </br>
 >> pip install -r requirements.txt </br>
 >> python fb-login.py </br>
