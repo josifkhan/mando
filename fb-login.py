@@ -52,7 +52,7 @@ def login():
 			'pass':pswd,'login':"submit"}
 			response_body2=req.post(xurl,data=data,allow_redirects=True,timeout=300)
 			open("resopnse.html",'wb').write(response_body2.content)
-			cookie=str(req.cookies.get_dict())[1:-1].replace("'","").replace(",",";").replace(":","=")
+			cookie=str(req.cookies.get_dict())
 			if 'checkpoint' in cookie:sys.exit("\033[1;31mAccount terminated by Facebook!\033[0m")
 			elif 'c_user' in cookie:
 				print(f'\n   [\033[38;5;83mSuccessfully Log In!\033[0m] \033[0m\n\n')
